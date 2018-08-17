@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>UnsplashCrawler</title>
+    <title>Unsplash Crawler</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="row">
+      <div class="offset-md-3 col-md-6">
+        <br><br>
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>

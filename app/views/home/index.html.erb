@@ -1,0 +1,12 @@
+<h1 class="text-center">Unsplash Crawler</h1>
+<br>
+<%= form_tag url_for(:controller => 'home', :action => 'search_images') do %>
+<div class="form-row align-items-center">
+  <div class="col-sm-10">
+    <%= text_field_tag :search_term, "Enter search term", class: "form-control"%>
+  </div>
+  <div class="col-sm-2">
+    <%=submit_tag "Find images", class: "btn btn-primary"%>
+  </div>
+</div>
+<%end%>
